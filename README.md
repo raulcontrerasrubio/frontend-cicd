@@ -15,7 +15,7 @@ Once you are running the Docker container, you can access the app at `http://loc
 ## Another Docker commands
 Just as a reminder, these are another commands that could be useful:
 - `docker ps` Lists the containers that are started. To see all created containers run `docker ps --all`
-- `docker system prune` Removes all cache images and containers
+- `docker system prune` Removes all cached images and containers
 - `docker create [IMAGE]` Creates a container based on IMAGE
 - `docker start [ID]` Run the container with the ID id
 - `docker run [IMAGE]` Creates and runs a container based on IMAGE
