@@ -13,9 +13,9 @@ It's easy, right?
 Once you are running the Docker container, you can access the app at `http://localhost:3000`
 
 ## Run React tests
-1. Build your project with `docker build -f Dockerfile.dev .`
-2. Copy the returned id.
-3. Run `docker run -it [ID] npm run test`
+1. Start your app with `docker-compose up`
+2. On another terminal, run `docker ps` and get the container id.
+3. Execute the next command to run the test suite: `docker exec -it [ID] npm run test`
 
 ## Another Docker commands
 Just as a reminder, these are another commands that could be useful:
