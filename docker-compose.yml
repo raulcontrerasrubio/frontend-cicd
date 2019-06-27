@@ -9,3 +9,11 @@ services:
     volumes:
       - /home/app/react-client/node_modules
       - .:/home/app/react-client
+  test-react-client:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /home/app/react-client/node_modules
+      - .:/home/app/react-client
+    command: ["npm", "run", "test"]

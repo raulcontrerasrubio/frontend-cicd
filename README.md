@@ -17,6 +17,8 @@ Once you are running the Docker container, you can access the app at `http://loc
 2. Copy the returned id.
 3. Run `docker run -it [ID] npm run test`
 
+Another option is running a second service declarated on docker-compose file which is only responsible of running the test suite.
+
 ## Another Docker commands
 Just as a reminder, these are another commands that could be useful:
 - `docker ps` Lists the containers that are started. To see all created containers run `docker ps --all`
