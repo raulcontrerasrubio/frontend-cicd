@@ -6,4 +6,4 @@ before_install:
   - docker build -t raulcontrerasrubio/frontend-cicd -f Dockerfile.dev .
 
 script:
-  - docker run raulcontrerasrubio/frontend-cicd npm run coverage
+  - docker run raulcontrerasrubio/frontend-cicd npm run test-ci
