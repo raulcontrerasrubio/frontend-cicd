@@ -19,6 +19,11 @@ Once you are running the Docker container, you can access the app at `http://loc
 
 Another option is running a second service declarated on docker-compose file which is only responsible of running the test suite.
 
+## Run for production
+1. Create the image and get the id `docker build .`
+2. Run the new container with `docker run -p [PORT]:80 [ID]` where PORT is, for example, 8080
+3. Go into your production app at `http://localhost:[PORT]`
+
 ## Another Docker commands
 Just as a reminder, these are another commands that could be useful:
 - `docker ps` Lists the containers that are started. To see all created containers run `docker ps --all`
