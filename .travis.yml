@@ -10,7 +10,7 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "us-west-2"
+  region: "us-east-2"
   app: "frontend-cicd"
   env: "FrontendCicd-env"
   bucket_name: "elasticbeanstalk-us-east-2-705173592693"
