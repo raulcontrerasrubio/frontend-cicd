@@ -24,6 +24,11 @@ Another option is running a second service declarated on docker-compose file whi
 2. Run the new container with `docker run -p [PORT]:80 [ID]` where PORT is, for example, 8080
 3. Go into your production app at `http://localhost:[PORT]`
 
+## Deploy to the real world
+- Once you have configured TravisCI with the .travis.yml file, you must configure the following AWS services: Elastic Beanstalk, S3, IAM
+- You must expose the port 80 on your Dockerfile
+Now, when a change is made to master branch, TravisCI will run the tests and, if everything went OK, TravisCI will start the deployment to AWS.
+
 ## Another Docker commands
 Just as a reminder, these are another commands that could be useful:
 - `docker ps` Lists the containers that are started. To see all created containers run `docker ps --all`
