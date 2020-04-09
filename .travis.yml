@@ -7,9 +7,15 @@ before_install:
 script:
   - docker run -e CI=true raulcontrerasrubio/frontend-cicd npm run test
 # deploy:
+#   edge: true # Only if the deploy fails because of a missing bucket_name error
 #   provider: elasticbeanstalk
 #   region: "us-west-2"
 #   app: "frontend-cicd"
 #   env: "frontend-cicd-env"
 #   bucket_name: "BUCKET OF S3 WHICH CONTAINS EB"
 #   bucket_path: "Path inside the bucket"
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY # Environment variable set on Travis CI
+#   secret_access_key:
+#     secure: "$AWS_SECRET_KEY" # Environment variable set on Travis CI
