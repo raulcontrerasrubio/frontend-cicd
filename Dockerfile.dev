@@ -1,5 +1,5 @@
 FROM node:12.4.0-alpine
-WORKDIR /home/app/react-client
+WORKDIR /home/client
 COPY package.json .
 RUN npm install
 COPY . .
